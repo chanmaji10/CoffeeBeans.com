@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="assets/coffee_images/coffee_icon.png">
-    
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/coffee_images/coffee_icon.png">
 
-	<title>Coffee Beans Comparison</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>CoffeeBeans.com</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
     <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/ct-paper.css" rel="stylesheet" />
     <link href="assets/css/demo.css" rel="stylesheet" />
 
 
@@ -21,136 +22,61 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-    
+
 </head>
+
 <body>
-<nav class="navbar navbar-ct-transparent" role="navigation-demo" id="demo-navbar">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+    <nav class="navbar navbar-ct-transparent" role="navigation-demo" id="demo-navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#">
-           <div class="logo-container">
-                <div class="logo">
-                    <img src="assets/coffee_images/coffee_icon.png">
-                </div>
-                <div class="brand">
-                    CoffeeBeans.com
-                </div>
-            </div>
-      </a>
-    </div>
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navigation-example-2">
-      <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#query" class="btn btn-danger btn-simple">query</a>
-          </li>
-          <li>
-            <a href="#vue_table" class="btn btn-danger btn-simple">beans</a>
-          </li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-->
-</nav>
-
-
-<div class="wrapper">
-    <div class="demo-header demo-header-image">
-        <div class="motto">
-            <h1>Coffee Beans Comparison</h1>
-            <h3>国内のカフェや焙煎所のコーヒー豆をまとめて比較.</h3>
-        </div>
-    </div>
-
-    <div class="main">
-<!--
-        <div class="section">
-            <div class="container tim-container">
-                <span>
-                    <div class="tim-title">
-                        <h2>Select beeans</h2>
+                <a href="#">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="assets/coffee_images/coffee_icon.png">
+                        </div>
+                        <div class="brand">
+                            CoffeeBeans.com
+                        </div>
                     </div>
-                    
-                    <div id="buttons">
-                        <div class="col-sm-3">
-                            <h3>shop</h3>
-                            <label class="checkbox" for="checkbox1">
-                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
-                                ヴォアラコーヒー
-                            </label>
-                            
-                            <label class="checkbox" for="checkbox2">
-                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
-                                丸山珈琲
-                            </label>
-                        </div>
-                        
-                        <div class="col-sm-3">
-                            <h3>roast</h3>
-                            <label class="checkbox" for="checkbox1">
-                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
-                                極浅煎り
-                            </label>
-                            <label class="checkbox" for="checkbox2">
-                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
-                                浅煎り
-                            </label>
-                            <label class="checkbox" for="checkbox3">
-                                <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" checked>
-                                中煎り
-                            </label>
-                            <label class="checkbox" for="checkbox4">
-                                <input type="checkbox" value="" id="checkbox4" data-toggle="checkbox" checked>
-                                深煎り
-                            </label>
-                            <label class="checkbox" for="checkbox5">
-                                <input type="checkbox" value="" id="checkbox5" data-toggle="checkbox" checked>
-                                極深煎り
-                            </label>
-                        </div>
-                        <div class="col-sm-3">
-                            <h3>産地</h3>
-                            <label class="checkbox" for="checkbox1">
-                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
-                                ブラジル
-                            </label>
-                            <label class="checkbox" for="checkbox2">
-                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
-                                エチオピア
-                            </label>
-                        </div>
-                        <div class="col-sm-3">
-                            <h3>flavor</h3>
-                            <label class="checkbox" for="checkbox1">
-                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
-                                オレンジ
-                            </label>
-                            <label class="checkbox" for="checkbox2">
-                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
-                                チョコレート
-                            </label>
-                        </div>
-                        
-                        <div id="slider-default" class="slider-info ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                            <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min " style="width: 0%;"></div>
-                            <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;">aaa</a>
-                        </div>
-                    </div>        
-                </span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-example-2">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#query" class="btn btn-danger btn-simple">query</a>
+                    </li>
+                    <li>
+                        <a href="#vue_table" class="btn btn-danger btn-simple">beans</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-->
+    </nav>
+
+
+    <div class="wrapper">
+        <div class="demo-header demo-header-image">
+            <div class="motto">
+                <h1>Coffee Beans Comparison</h1>
+                <h3>国内のカフェや焙煎所のコーヒー豆をまとめて比較.</h3>
             </div>
         </div>
-        
--->
-                    <div class="section">
-                    <div id="app" class="container tim-container">
-                        <span>
+
+        <div class="main">
+            <div class="section">
+                <div id="app" class="container tim-container">
+                    <span>
                         <div class="tim-title">
                             <h2>QUERY</h2>
                         </div>
@@ -206,26 +132,25 @@
                             </div>
 <!--
                             <br>  
-                            <span>Checked: {{ chekRoastTypes }}</span>
--->
+                            <span>Checked: {{ chekRoastTypes }}</span> -->
 
-                          </div>
-                        </span>
-                            
-                        <div id='vue_table' class="container tim-container">
-                            <div class="tim-title">
-                            <h2>BEANS</h2>
-                            </div>
-                        <table>
-                            <thead>
+                </div>
+                </span>
+
+                <div id='vue_table' class="container tim-container">
+                    <div class="tim-title">
+                        <h2>BEANS</h2>
+                    </div>
+                    <table>
+                        <thead>
                             <tr>
                                 <th class="th6" v-for="(value, key) in columns" @click="sortBy(key)">
                                     {{ value }}
                                     <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'"></span>
                                 </th>
                             </tr>
-                            </thead>
-                            <tbody>
+                        </thead>
+                        <tbody>
                             <tr v-for="beans in filteredBeans">
                                 <td v-for="(value, key) in columns">
                                     <a v-if='key=="name"' v-bind:href=" beans['url']">{{beans[key]}}</a>
@@ -233,208 +158,222 @@
                                     <p v-else>{{beans[key]}}</p>
                                 </td>
                             </tr>
-                            </tbody>
-                        </table>
-                        </div>    
-                    </div>         
-                    </div>        
-        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
 
 
     <footer class="footer-demo section-dark">
-    <div class="container">
-        <div class="copyright pull-right">
-            &copy; 2019, made with by chanmaji10
+        <div class="container">
+            <div class="copyright pull-right">
+                &copy; 2019, made with by chanmaji10
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. </p>
+                </div>
+                <div class="modal-footer">
+                    <div class="left-side">
+                        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Never mind</button>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-side">
+                        <button type="button" class="btn btn-danger btn-simple">Delete</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. </p>
-      </div>
-      <div class="modal-footer">
-        <div class="left-side">
-            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Never mind</button>
-        </div>
-        <div class="divider"></div>
-        <div class="right-side">
-            <button type="button" class="btn btn-danger btn-simple">Delete</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!--    end modal -->
+    <!--    end modal -->
 
 
 </body>
 
-    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 
-	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
 
-	<!--  Plugins -->
-	<script src="assets/js/ct-paper-checkbox.js"></script>
-	<script src="assets/js/ct-paper-radio.js"></script>
-	<script src="assets/js/bootstrap-select.js"></script>
-	<script src="assets/js/bootstrap-datepicker.js"></script>
+<!--  Plugins -->
+<script src="assets/js/ct-paper-checkbox.js"></script>
+<script src="assets/js/ct-paper-radio.js"></script>
+<script src="assets/js/bootstrap-select.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
 
-	<script src="assets/js/ct-paper.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: function () {
-                var columns = {
-                    shop: '販売店',
-                    name: '商品名',
-                    value: '価格',
-                    gram: '内容量',
-                    country: '生産地(国)',
-                    roastType:'焙り具合',
-                    detial: '詳細'
-                };
-                var sortOrders = {};
-                Object.keys(columns).forEach(function (key) {
-                    sortOrders[key] = 1
-                });
+<script src="assets/js/ct-paper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: function() {
+            var columns = {
+                shop: '販売店',
+                name: '商品名',
+                value: '価格',
+                gram: '内容量',
+                country: '生産地(国)',
+                roastType: '焙り具合',
+                detial: '詳細'
+            };
+            var sortOrders = {};
+            Object.keys(columns).forEach(function(key) {
+                sortOrders[key] = 1
+            });
 
 
 
-                return {
-                    columns: columns,
-                    beans: [
-                        {
-                            shop:"voila",
-                            name:"A",
-                            value:1900,
-                            gram:250,
-                            country:"Guatemala",
-                            roastType:"中焙り",
-                            detial:"マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
-                            flavors:["ダークチョコ","マスカット","レモネード"],
-                            url:"https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
-                        },
-                        {
-                            shop:"maruyama",
-                            name:"B",
-                            value:1900,
-                            gram:250,
-                            country:"Brazil",
-                            roastType:"中焙り",
-                            detial:"マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
-                            flavors:["ダークチョコ","マスカット","レモネード"],
-                            url:"https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
-                        },
-                        {
-                            shop:"other",
-                            name:"C",
-                            value:1900,
-                            gram:250,
-                            country:"Ethiopia",
-                            roastType:"中焙り",
-                            detial:"マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
-                            flavors:["ダークチョコ","マスカット","レモネード"],
-                            url:"https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
-                        },
-                    ],
-                    sortKey: '',
-                    sortOrders: sortOrders,
-                    searchWord: '',
-                    chekShops:['voila','maruyama','other'],
-                    chekCountries:['Guatemala', 'Brazil', 'Ethiopia'],
-                    chekRoastTypes:['veryLow', 'low', 'medium', 'high', 'veryHigh'],
-                    shops: {
-                        voila: 'ヴォアラコーヒー',
-                        maruyama: '丸山珈琲',
-                        other: 'その他'
+            return {
+                columns: columns,
+                beans: [{
+                        shop: "voila",
+                        name: "A",
+                        value: 1900,
+                        gram: 250,
+                        country: "Guatemala",
+                        roastType: "中焙り",
+                        detial: "マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
+                        flavors: ["ダークチョコ", "マスカット", "レモネード"],
+                        url: "https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
                     },
-                    countries: {
-                        Guatemala: 'グアテマラ／Guatemala',
-                        Brazil: 'ブラジル／Brazil',
-                        Ethiopia: 'エチオピア／Ethiopia'
+                    {
+                        shop: "maruyama",
+                        name: "B",
+                        value: 1900,
+                        gram: 250,
+                        country: "Brazil",
+                        roastType: "中焙り",
+                        detial: "マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
+                        flavors: ["ダークチョコ", "マスカット", "レモネード"],
+                        url: "https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
                     },
-                    roastTypes: {
-                        veryLow: '極浅焙り',
-                        low: '浅焙り',
-                        medium: '中焙り',
-                        high: '深焙り',
-                        veryHigh: '極深焙り'
+                    {
+                        shop: "other",
+                        name: "C",
+                        value: 1900,
+                        gram: 250,
+                        country: "Ethiopia",
+                        roastType: "中焙り",
+                        detial: "マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
+                        flavors: ["ダークチョコ", "マスカット", "レモネード"],
+                        url: "https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
                     },
-                    flavors: {
-                        orange: 'オレンジ',
-                        chocolate: 'チョコレート', 
-                    }
-
-                }
-            },
-            methods: {
-                sortBy: function(key) {
-                    this.sortKey = key;
-                    this.sortOrders[key] = this.sortOrders[key] * -1;
-                }
-            },
-            computed: {
-                filteredBeans: function () {
-                    var data = this.beans;
-
-                    var chekShops = this.chekShops;//.map(Number);
-                    var chekCountries = this.chekCountries;
-                    var roastTypes = this.roastTypes;
-                    // en to jp
-                    var chekRoastTypes = this.chekRoastTypes.map(function(i){return roastTypes[i];});
-                    var filterWord = this.searchWord && this.searchWord.toLowerCase();
-
-                    if(filterWord || chekShops || chekCountries || chekRoastTypes) {
-                        data = data.filter(function (row) {
-
-                            // shop
-                            if (chekShops) {
-                                if (chekShops.indexOf(row['shop']) == -1) {
-                                    return false;
-                                }
-                            }         
-
-                            // country
-                            if (chekCountries) {
-                                if (chekCountries.indexOf(row['country']) == -1) {
-                                    return false;
-                                }
-                            }         
-                            // roastType
-                            if (chekRoastTypes) {
-                                if (chekRoastTypes.indexOf(row['roastType']) == -1) {
-                                    return false;
-                                }
-                            }  
-
-                            // keyword
-                            if (filterWord) {
-                                return Object.keys(row).some(function (key) {
-                                    if (String(row['name']).toLowerCase().indexOf(filterWord) > -1) {
-                                        return true;
-                                    }
-                                });
-                            }
-                            return row;
-                        })
-                    }
-                    return data;
+                    {
+                        shop: "maruyama",
+                        name: "ドワイト・アギラール2018年ペルーCOE1位",
+                        value: 3456,
+                        gram: 80,
+                        country: "Ethiopia",
+                        roastType: "中焙り",
+                        detial: "マスカット、ラズベリー、ジャスミンの風味。長く続く甘さ。華やかな味わい。",
+                        flavors: ["マスカット"],
+                        url: "http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=PE020190014"
+                    },
+                    {shop:"maruyama",name:"ドワイト・アギラール2018年ペルーCOE1位",value:3456,gram:80,country:"Ethiopia",roastType:"中焙り",detial:"マスカット、ラズベリー、ジャスミンの風味。長く続く甘さ。華やかな味わい。",flavors:["マスカット"],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=PE020190014"},{shop:"maruyama",name:"フェデリコ・バルエタ2018年メキシコCOE２位",value:2376,gram:80,country:"Ethiopia",roastType:"中焙り",detial:"アップル、グレープ、ブラックティーの風味。シルクの様な質感。バランスの良い味わい。",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=MX020180196"},{shop:"maruyama",name:"リカルド・カルデロンティピカ",value:788,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"生産国：コスタリカ共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=CR020180225"},{shop:"maruyama",name:"尾山台オリジナルブレンド",value:734,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"尾山台店・通信販売限定！",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130016"},{shop:"maruyama",name:"鎌倉ブレンド",value:734,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"鎌倉店・通信販売限定",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180150032"},{shop:"maruyama",name:"松本アルプスブレンド",value:734,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"松本店・通信販売限定",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180180006"},{shop:"maruyama",name:"八ヶ岳ブレンド～満天の星空～",value:734,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"リゾナーレ八ヶ岳店・通信販売限定",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130177"},{shop:"maruyama",name:"ルイス・パウロイエローブルボン",value:988,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"生産国：ブラジル連邦共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BR020190027"},{shop:"maruyama",name:"エンリケ・カンブライアイエローブルボンナチュラル",value:988,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"マンゴー、アップル、バタースコッチの風味。クリーミーな口当たり。長く続く甘さ。生産国：ブラジル連邦共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BR020190035"},{shop:"maruyama",name:"ムバンガナチュラル",value:988,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"生産国：ブルンディ共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BI020190036"},{shop:"maruyama",name:"ハケル・ヒベイロムンドノーボ",value:788,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"生産国：ブラジル連邦共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BR020190032"},{shop:"maruyama",name:"エルナンド・ゴメス深煎り",value:788,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"生産国：コロンビア共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=CO020180227"},{shop:"maruyama",name:"白樺ブレンド",value:734,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"MIDORI長野店・通販限定販売",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180140059"},{shop:"maruyama",name:"ディカフェカングアル＆サン・マルコス・デ・カイキン",value:788,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"アップル、ミルクチョコレートの風味。",flavors:["ミルクチョコ"],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=HN020190002"},{shop:"maruyama",name:"ディカフェカングアル&サン・マルコス・デ・カイキン深煎り",value:788,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"ダークチョコレート、ローストナッツの風味。",flavors:["ダークチョコ"],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=HN020190003"},{shop:"maruyama",name:"丸山珈琲のブレンド・クラシック1991",value:900,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"創業当初の「丸山珈琲のブレンド」を復刻",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130014"},{shop:"maruyama",name:"フェリぺ・ネリー深煎り",value:788,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"生産国：ペルー共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=PE020190037"},{shop:"maruyama",name:"ワーグナーブレンド〜さまよえるオランダ人",value:900,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"東京・春・音楽祭と丸山珈琲のコラボ商品",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180190001"},{shop:"maruyama",name:"夏のスペシャルブレンド",value:900,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"夏限定のスペシャルブレンド！",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130107"},{shop:"maruyama",name:"トーニョ・バランテスSL28深煎り",value:821,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"生産国：コスタリカ共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=CR020180224"},{shop:"maruyama",name:"ニャビカランカ深煎り",value:788,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"ダークチョコレート、ハーブの様な風味。滑らかな口当たり。生産国：ブルンディ共和国",flavors:["ダークチョコ"],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BI020190038"},{shop:"maruyama",name:"ハルニレテラスブレンド",value:734,gram:100,country:"Ethiopia",roastType:"中深焙り",detial:"ハルニレテラス店・通信販売限定",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130012"},{shop:"maruyama",name:"西麻布ブレンド",value:734,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"西麻布店・通販限定販売",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130192"},{shop:"maruyama",name:"ディカフェブレンド深煎り",value:730,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"ホットはもちろん、アイスコーヒーにもお勧めのディカフェブレンドをご紹介",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180170005"},{shop:"maruyama",name:"ペドロ・ロドリゲスゲイシャラス・アラシータス",value:2376,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"フローラル、ピーチ、メープルシロップの風味。シロップの様な質感。甘い余韻。生産国：ボリビア多民族国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BO020190022"},{shop:"maruyama",name:"茜すみれ",value:648,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"人気の定番ブレンド",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130008"},{shop:"maruyama",name:"小諸ブレンド",value:648,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"焙煎工場併設の店舗である小諸店オリジナルブレンド",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130015"},{shop:"maruyama",name:"丸山珈琲のブレンド",value:648,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"\n人気No.1\n創業当時から長年愛され続ける定番のブレンドコーヒー \n",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130001"},{shop:"maruyama",name:"ペドロ・ロドリゲスSL28フロリポンディオ",value:1620,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"焙煎度：中煎り ",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BO020190023"},{shop:"maruyama",name:"エスプレッソブレンド中深煎り",value:648,gram:100,country:"Ethiopia",roastType:"中深焙り",detial:"定番のエスプレッソブレンド",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130018"},{shop:"maruyama",name:"ペドロ・ロドリゲスジャバ・ピーベリーラス・アラシータス",value:1620,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"生産国：ボリビア多民族国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BO020190024"},{shop:"maruyama",name:"アイス・ゲイシャブレンド",value:1512,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"希少品種「ゲイシャ」を贅沢に使用した期間限定ブレンド！",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180170007"},{shop:"maruyama",name:"有機コーヒービジャ・ロサリオ",value:821,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"生産国：ボリビア多民族国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BO020190031"},{shop:"maruyama",name:"カルロス・イトゥラルデティピカ",value:1512,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"生産国：ボリビア多民族国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BO020190026"},{shop:"maruyama",name:"リゾナーレオリジナルマイルドブレンド",value:648,gram:100,country:"Ethiopia",roastType:"中深焙り",detial:"リゾナーレ八ヶ岳店・通信販売限定",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130011"},{shop:"maruyama",name:"ウッドノート",value:648,gram:100,country:"Ethiopia",roastType:"中焙り",detial:"夏限定の中煎りブレンド！",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130105"},{shop:"maruyama",name:"カルロス・イトゥラルデティピカ深煎り",value:1512,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"生産国：ボリビア多民族国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BO020190025"},{shop:"maruyama",name:"ヴェルデ",value:648,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"夏限定の深煎りブレンド！",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130106"},{shop:"maruyama",name:"アイス用ブレンド",value:648,gram:100,country:"Ethiopia",roastType:"深焙り",detial:"暑い季節だけでなく、一年を通して人気の定番アイス用ブレンド",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180130017"},{shop:"voila",name:"モカ・クラシック ",value:1200,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"ラベンダーの様な香りと白桃やライチを想わせる風味。すっきりとした口当たり。",flavors:[],url:"https:\/\/www.umaicoffee.jp\/product\/2923"},{shop:"voila",name:"アニバーサリー",value:1200,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"ライムやマスカット、アーモンドを想わせる風味。レモネードの様なやさしい甘さが続きます。",flavors:["マスカット","ライム"],url:"https:\/\/www.umaicoffee.jp\/product\/2730"},{shop:"voila",name:"エチオピア・ナチュラル ",value:1200,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"カシスやラズベリー、レモンティーを想わせる風味。クリーミーな口当たり。",flavors:[],url:"https:\/\/www.umaicoffee.jp\/product\/2952"},{shop:"voila",name:"モカ・ノアール",value:1200,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"ジャスミンの様な香りとアプリコットやダークチョコを想わせる風味。滑らかな口当たり。",flavors:["ダークチョコ"],url:"https:\/\/www.umaicoffee.jp\/product\/2925"},{shop:"voila",name:"グアテマラ・クラシック",value:1200,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"レーズンやアーモンド、ライムを想わせる風味。ダークチョコの様な甘さと丸みのある口当たり。",flavors:["ダークチョコ","ライム"],url:"https:\/\/www.umaicoffee.jp\/product\/2919"},{shop:"voila",name:"ケニア・グランクリュ",value:1500,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"黄桃、オレンジ、マスカットを想わせるフルーティーな風味。黒糖の様な甘さが長く続きます。",flavors:["オレンジ","マスカット"],url:"https:\/\/www.umaicoffee.jp\/product\/2910"},{shop:"voila",name:"インテグラル・シプレス農園（こくまろ）",value:1200,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"オレンジや巨峰、ダークチョコを想わせる風味。蜂蜜の様な甘さと丸みのある口当たり。",flavors:["ダークチョコ","オレンジ"],url:"https:\/\/www.umaicoffee.jp\/product\/2816"},{shop:"voila",name:"サマーデイズ",value:1200,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"アプリコットやオレンジを想わせる風味。ミルクチョコの様な甘さと滑らかな口当たり。",flavors:["オレンジ","ミルクチョコ"],url:"https:\/\/www.umaicoffee.jp\/product\/2941"},{shop:"voila",name:"マンデリン・ライノー",value:1000,gram:250,country:"Ethiopia",roastType:"中焙り",detial:" ライチ、プラム、グレープフルーツを想わせる風味。ビターキャラメルの様なコクと甘さの後味。",flavors:[],url:"https:\/\/www.umaicoffee.jp\/product\/2575"},{shop:"voila",name:"ラ・エスペランサ農園",value:1900,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",flavors:["ダークチョコ","マスカット"],url:"https:\/\/www.umaicoffee.jp\/product\/2934"},{shop:"voila",name:"エチオピア",value:1000,gram:250,country:"Ethiopia",roastType:"中焙り",detial:"スイートポテトやレモンティーを想わせる風味。フローラルでやさしい甘さが続きます。",flavors:[],url:"https:\/\/www.umaicoffee.jp\/product\/2697"},{shop:"voila",name:"エルサルバドル",value:1000,gram:250,country:"Ethiopia",roastType:"中焙り",detial:" オレンジやリンゴを想わせる風味。ミルクチョコの様な甘さで丸みのある口当たり。",flavors:["オレンジ","ミルクチョコ"],url:"https:\/\/www.umaicoffee.jp\/product\/2840"},{shop:"maruyama",name:"中煎りセロ",value:1998,gram:500,country:"Ethiopia",roastType:"中焙り",detial:"「デイリースペシャルティ」シリーズの中煎りコーヒー",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180150018"},{shop:"maruyama",name:"深煎りカラメロ",value:1998,gram:500,country:"Ethiopia",roastType:"深焙り",detial:"「デイリースペシャルティ」シリーズの深煎りコーヒー",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180170015"},{shop:"maruyama",name:"中深煎りクレモーソ",value:1998,gram:500,country:"Ethiopia",roastType:"中深焙り",detial:"「デイリースペシャルティ」シリーズの中深煎りコーヒー",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180150019"},{shop:"maruyama",name:"浅煎りドゥルセ",value:2160,gram:500,country:"Ethiopia",roastType:"浅焙り",detial:"「デイリースペシャルティ」シリーズの浅煎りコーヒー",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=BL180150017"},{shop:"maruyama",name:"ヘスース・ミハウアンカ深煎り",value:2376,gram:500,country:"Ethiopia",roastType:"深焙り",detial:"生産国：ペルー共和国",flavors:[],url:"http:\/\/www.maruyamacoffee.com\/ec\/productdetail.php?pid=PE020190039"}
+                ],
+                sortKey: '',
+                sortOrders: sortOrders,
+                searchWord: '',
+                chekShops: ['voila', 'maruyama', 'other'],
+                chekCountries: ['Guatemala', 'Brazil', 'Ethiopia'],
+                chekRoastTypes: ['veryLow', 'low', 'medium', 'high', 'veryHigh'],
+                shops: {
+                    voila: 'ヴォアラコーヒー',
+                    maruyama: '丸山珈琲',
+                    other: 'その他'
                 },
+                countries: {
+                    Guatemala: 'グアテマラ／Guatemala',
+                    Brazil: 'ブラジル／Brazil',
+                    Ethiopia: 'エチオピア／Ethiopia'
+                },
+                roastTypes: {
+                    veryLow: '極浅焙り',
+                    low: '浅焙り',
+                    medium: '中焙り',
+                    high: '深焙り',
+                    veryHigh: '極深焙り'
+                },
+                flavors: {
+                    orange: 'オレンジ',
+                    chocolate: 'チョコレート',
+                }
+
             }
-        });
-    </script>
+        },
+        methods: {
+            sortBy: function(key) {
+                this.sortKey = key;
+                this.sortOrders[key] = this.sortOrders[key] * -1;
+            }
+        },
+        computed: {
+            filteredBeans: function() {
+                var data = this.beans;
+
+                var chekShops = this.chekShops; //.map(Number);
+                var chekCountries = this.chekCountries;
+                var roastTypes = this.roastTypes;
+                // en to jp
+                var chekRoastTypes = this.chekRoastTypes.map(function(i) {
+                    return roastTypes[i];
+                });
+                var filterWord = this.searchWord && this.searchWord.toLowerCase();
+
+                if (filterWord || chekShops || chekCountries || chekRoastTypes) {
+                    data = data.filter(function(row) {
+
+                        // shop
+                        if (chekShops) {
+                            if (chekShops.indexOf(row['shop']) == -1) {
+                                return false;
+                            }
+                        }
+
+                        // country
+                        if (chekCountries) {
+                            if (chekCountries.indexOf(row['country']) == -1) {
+                                return false;
+                            }
+                        }
+                        // roastType
+                        if (chekRoastTypes) {
+                            if (chekRoastTypes.indexOf(row['roastType']) == -1) {
+                                return false;
+                            }
+                        }
+
+                        // keyword
+                        if (filterWord) {
+                            return Object.keys(row).some(function(key) {
+                                if (String(row['name']).toLowerCase().indexOf(filterWord) > -1) {
+                                    return true;
+                                }
+                            });
+                        }
+                        return row;
+                    })
+                }
+                return data;
+            },
+        }
+    });
+</script>
+
 </html>
