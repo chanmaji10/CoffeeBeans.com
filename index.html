@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/coffee_images/coffee_icon.png">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Coffee Beans Comparison</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    
+</head>
+<body>
+<nav class="navbar navbar-ct-transparent" role="navigation-demo" id="demo-navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#">
+           <div class="logo-container">
+                <div class="logo">
+                    <img src="assets/coffee_images/coffee_icon.png">
+                </div>
+                <div class="brand">
+                    CoffeeBeans.com
+                </div>
+            </div>
+      </a>
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navigation-example-2">
+      <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#query" class="btn btn-danger btn-simple">query</a>
+          </li>
+          <li>
+            <a href="#vue_table" class="btn btn-danger btn-simple">beans</a>
+          </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-->
+</nav>
+
+
+<div class="wrapper">
+    <div class="demo-header demo-header-image">
+        <div class="motto">
+            <h1>Coffee Beans Comparison</h1>
+            <h3>国内のカフェや焙煎所のコーヒー豆をまとめて比較.</h3>
+        </div>
+    </div>
+
+    <div class="main">
+<!--
+        <div class="section">
+            <div class="container tim-container">
+                <span>
+                    <div class="tim-title">
+                        <h2>Select beeans</h2>
+                    </div>
+                    
+                    <div id="buttons">
+                        <div class="col-sm-3">
+                            <h3>shop</h3>
+                            <label class="checkbox" for="checkbox1">
+                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
+                                ヴォアラコーヒー
+                            </label>
+                            
+                            <label class="checkbox" for="checkbox2">
+                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
+                                丸山珈琲
+                            </label>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <h3>roast</h3>
+                            <label class="checkbox" for="checkbox1">
+                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
+                                極浅煎り
+                            </label>
+                            <label class="checkbox" for="checkbox2">
+                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
+                                浅煎り
+                            </label>
+                            <label class="checkbox" for="checkbox3">
+                                <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" checked>
+                                中煎り
+                            </label>
+                            <label class="checkbox" for="checkbox4">
+                                <input type="checkbox" value="" id="checkbox4" data-toggle="checkbox" checked>
+                                深煎り
+                            </label>
+                            <label class="checkbox" for="checkbox5">
+                                <input type="checkbox" value="" id="checkbox5" data-toggle="checkbox" checked>
+                                極深煎り
+                            </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3>産地</h3>
+                            <label class="checkbox" for="checkbox1">
+                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
+                                ブラジル
+                            </label>
+                            <label class="checkbox" for="checkbox2">
+                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
+                                エチオピア
+                            </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3>flavor</h3>
+                            <label class="checkbox" for="checkbox1">
+                                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked>
+                                オレンジ
+                            </label>
+                            <label class="checkbox" for="checkbox2">
+                                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox" checked>
+                                チョコレート
+                            </label>
+                        </div>
+                        
+                        <div id="slider-default" class="slider-info ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                            <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min " style="width: 0%;"></div>
+                            <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;">aaa</a>
+                        </div>
+                    </div>        
+                </span>
+            </div>
+        </div>
+        
+-->
+                    <div class="section">
+                    <div id="app" class="container tim-container">
+                        <span>
+                        <div class="tim-title">
+                            <h2>QUERY</h2>
+                        </div>
+                        
+                        <div class="container">
+                    	<div class="form-group">
+                            <input type="text" v-model="searchWord" placeholder="search" class="form-control">
+                    	</div>
+                        </div>
+
+
+                          <div id='query' class="container tim-container">
+                            <div class="col-sm-4">
+                                <h3>shop</h3>
+                                <div class="cp_ipcheck">
+                                <ul>
+                                <div v-for="(value, key) in shops">
+                                    <li class="list_item">
+                                        <input type="checkbox" class="option-input" :id= "key" :value="key" v-model="chekShops" checked>
+                                        <label class="checkbox" :for="key">{{ value }}</label>
+                                    </li>
+                                </div>    
+                                </ul>
+                                </div>
+                            </div>  
+
+                            <div class="col-sm-4">
+                                <h3>country</h3>
+                                <div class="cp_ipcheck">
+                                <ul>
+                                <div v-for="(value, key) in countries">
+                                    <li class="list_item">
+                                        <input type="checkbox" class="option-input" :id= "key" :value="key" v-model="chekCountries" checked>
+                                        <label class="checkbox" :for="key">{{ value }}</label>
+                                    </li>
+                                </div>    
+                                </ul>
+                                </div>
+                            </div>                              
+
+                            <div class="col-sm-4">
+                                <h3>roast</h3>
+                                <div class="cp_ipcheck">
+                                <ul>
+                                <div v-for="(value, key) in roastTypes">
+                                    <li class="list_item">
+                                        <input type="checkbox" class="option-input" :id= "key" :value="key" v-model="chekRoastTypes" checked>
+                                        <label class="checkbox" :for="key">{{ value }}</label>
+                                    </li>
+                                </div>    
+                                </ul>
+                                </div>
+                            </div>
+<!--
+                            <br>  
+                            <span>Checked: {{ chekRoastTypes }}</span>
+-->
+
+                          </div>
+                        </span>
+                            
+                        <div id='vue_table' class="container tim-container">
+                            <div class="tim-title">
+                            <h2>BEANS</h2>
+                            </div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="th6" v-for="(value, key) in columns" @click="sortBy(key)">
+                                    {{ value }}
+                                    <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'"></span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr v-for="beans in filteredBeans">
+                                <td v-for="(value, key) in columns">
+                                    <a v-if='key=="name"' v-bind:href=" beans['url']">{{beans[key]}}</a>
+
+                                    <p v-else>{{beans[key]}}</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>    
+                    </div>         
+                    </div>        
+        
+    </div>
+
+
+
+
+    <footer class="footer-demo section-dark">
+    <div class="container">
+        <div class="copyright pull-right">
+            &copy; 2019, made with by chanmaji10
+        </div>
+    </div>
+</footer>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. </p>
+      </div>
+      <div class="modal-footer">
+        <div class="left-side">
+            <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Never mind</button>
+        </div>
+        <div class="divider"></div>
+        <div class="right-side">
+            <button type="button" class="btn btn-danger btn-simple">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--    end modal -->
+
+
+</body>
+
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugins -->
+	<script src="assets/js/ct-paper-checkbox.js"></script>
+	<script src="assets/js/ct-paper-radio.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+
+	<script src="assets/js/ct-paper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: function () {
+                var columns = {
+                    shop: '販売店',
+                    name: '商品名',
+                    value: '価格',
+                    gram: '内容量',
+                    country: '生産地(国)',
+                    roastType:'焙り具合',
+                    detial: '詳細'
+                };
+                var sortOrders = {};
+                Object.keys(columns).forEach(function (key) {
+                    sortOrders[key] = 1
+                });
+
+
+
+                return {
+                    columns: columns,
+                    beans: [
+                        {
+                            shop:"voila",
+                            name:"A",
+                            value:1900,
+                            gram:250,
+                            country:"Guatemala",
+                            roastType:"中焙り",
+                            detial:"マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
+                            flavors:["ダークチョコ","マスカット","レモネード"],
+                            url:"https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
+                        },
+                        {
+                            shop:"maruyama",
+                            name:"B",
+                            value:1900,
+                            gram:250,
+                            country:"Brazil",
+                            roastType:"中焙り",
+                            detial:"マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
+                            flavors:["ダークチョコ","マスカット","レモネード"],
+                            url:"https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
+                        },
+                        {
+                            shop:"other",
+                            name:"C",
+                            value:1900,
+                            gram:250,
+                            country:"Ethiopia",
+                            roastType:"中焙り",
+                            detial:"マスカットやレモネードの様な爽やかさ、ダークチョコレートを想わせる甘さと滑らかな口当たり。",
+                            flavors:["ダークチョコ","マスカット","レモネード"],
+                            url:"https:\\/\\/www.umaicoffee.jp\\/product\\/2934"
+                        },
+                    ],
+                    sortKey: '',
+                    sortOrders: sortOrders,
+                    searchWord: '',
+                    chekShops:['voila','maruyama','other'],
+                    chekCountries:['Guatemala', 'Brazil', 'Ethiopia'],
+                    chekRoastTypes:['veryLow', 'low', 'medium', 'high', 'veryHigh'],
+                    shops: {
+                        voila: 'ヴォアラコーヒー',
+                        maruyama: '丸山珈琲',
+                        other: 'その他'
+                    },
+                    countries: {
+                        Guatemala: 'グアテマラ／Guatemala',
+                        Brazil: 'ブラジル／Brazil',
+                        Ethiopia: 'エチオピア／Ethiopia'
+                    },
+                    roastTypes: {
+                        veryLow: '極浅焙り',
+                        low: '浅焙り',
+                        medium: '中焙り',
+                        high: '深焙り',
+                        veryHigh: '極深焙り'
+                    },
+                    flavors: {
+                        orange: 'オレンジ',
+                        chocolate: 'チョコレート', 
+                    }
+
+                }
+            },
+            methods: {
+                sortBy: function(key) {
+                    this.sortKey = key;
+                    this.sortOrders[key] = this.sortOrders[key] * -1;
+                }
+            },
+            computed: {
+                filteredBeans: function () {
+                    var data = this.beans;
+
+                    var chekShops = this.chekShops;//.map(Number);
+                    var chekCountries = this.chekCountries;
+                    var roastTypes = this.roastTypes;
+                    // en to jp
+                    var chekRoastTypes = this.chekRoastTypes.map(function(i){return roastTypes[i];});
+                    var filterWord = this.searchWord && this.searchWord.toLowerCase();
+
+                    if(filterWord || chekShops || chekCountries || chekRoastTypes) {
+                        data = data.filter(function (row) {
+
+                            // shop
+                            if (chekShops) {
+                                if (chekShops.indexOf(row['shop']) == -1) {
+                                    return false;
+                                }
+                            }         
+
+                            // country
+                            if (chekCountries) {
+                                if (chekCountries.indexOf(row['country']) == -1) {
+                                    return false;
+                                }
+                            }         
+                            // roastType
+                            if (chekRoastTypes) {
+                                if (chekRoastTypes.indexOf(row['roastType']) == -1) {
+                                    return false;
+                                }
+                            }  
+
+                            // keyword
+                            if (filterWord) {
+                                return Object.keys(row).some(function (key) {
+                                    if (String(row['name']).toLowerCase().indexOf(filterWord) > -1) {
+                                        return true;
+                                    }
+                                });
+                            }
+                            return row;
+                        })
+                    }
+                    return data;
+                },
+            }
+        });
+    </script>
+</html>
